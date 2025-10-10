@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <meta name="description" content="Personal portfolio showcasing skills, experience, and projects">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">Portfolio</span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Your Name</span>
+                </h1>
+                <p class="hero-subtitle">Cloud Engineer & DevOps Specialist</p>
+                <p class="hero-description">
+                    I design and implement scalable cloud infrastructure using AWS, Azure, Kubernetes, and Terraform.
+                    Passionate about automation, containerization, and building resilient cloud-native solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-avatar">
+                    <img src="https://via.placeholder.com/300x300/667eea/ffffff?text=Your+Photo" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm a passionate developer with over 3 years of experience creating digital solutions
+                        that make a difference. I love turning complex problems into simple, beautiful designs.
+                    </p>
+                    <p class="about-description">
+                        When I'm not coding, you can find me exploring new technologies, contributing to open-source
+                        projects, or sharing knowledge with the developer community.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/400x500/667eea/ffffff?text=About+Image" alt="About Me">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">Web Development</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Cloud Platforms</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-microsoft"></i>
+                            <span>Azure</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>Google Cloud</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Cloud Architecture</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">DevOps & Containers</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-dharmachakra"></i>
+                            <span>Kubernetes</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>Terraform</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git & CI/CD</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Infrastructure as Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Monitoring & Logging</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/667eea/ffffff?text=To-Do+App" alt="To-Do List Application">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">To-Do List Application</h3>
+                        <p class="project-description">
+                            Developed multi-user task management system with secure authentication and administrative dashboard.
+                            Containerized application using Docker for consistent deployment across environments.
+                            Implemented CI/CD pipeline with GitHub Actions for automated testing, building, and deployment to Minikube.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">GitHub Actions</span>
+                            <span class="tech-tag">Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/764ba2/ffffff?text=EmpowerFit" alt="EmpowerFit - Fitness Coaching Platform">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">EmpowerFit - Fitness Coaching Platform</h3>
+                        <p class="project-description">
+                            Built comprehensive online fitness coaching platform featuring personalized workout plans and nutrition guidance.
+                            Implemented secure user authentication and database integration using PHP and PDO for robust data management.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP (PDO)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/f093fb/ffffff?text=ShopMe" alt="ShopMe - E-commerce Platform">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ShopMe - E-commerce Platform</h3>
+                        <p class="project-description">
+                            Developed e-commerce website specializing in athletic footwear with intuitive navigation and user-friendly interface.
+                            Integrated secure payment processing and responsive design for optimal user experience across all devices.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Payment Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Summer Intern</h3>
+                        <p class="timeline-company">Zmware</p>
+                        <p class="timeline-period">July 2025 – September 2025</p>
+                        <p class="timeline-description">
+                            Provisioned VMs in a nested VMware ESXi environment to test private cloud concepts.
+                            Worked with Strapi CMS integrated with PostgreSQL and AWS S3.
+                            Managed AWS services including EC2, IAM, S3, and CloudWatch with alarms & notifications.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-badge">VMware ESXi</span>
+                            <span class="skill-badge">AWS EC2</span>
+                            <span class="skill-badge">AWS S3</span>
+                            <span class="skill-badge">CloudWatch</span>
+                            <span class="skill-badge">Strapi CMS</span>
+                            <span class="skill-badge">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Summer Intern</h3>
+                        <p class="timeline-company">Tunisie Telecom</p>
+                        <p class="timeline-period">July 2023 – August 2023</p>
+                        <p class="timeline-description">
+                            Gained comprehensive insights into telecommunications infrastructure and cloud computing environments.
+                            Observed large-scale network architecture and data center operations in enterprise setting.
+                            Learned about virtualization technologies and deployment of core telecommunication services.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-badge">Telecommunications</span>
+                            <span class="skill-badge">Network Architecture</span>
+                            <span class="skill-badge">Data Centers</span>
+                            <span class="skill-badge">Virtualization</span>
+                            <span class="skill-badge">Cloud Computing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">Let's work together</h3>
+                    <p class="contact-description">
+                        I'm always interested in new opportunities and exciting projects.
+                        Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>your.email@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Your City, Country</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="email-contact-section">
+                        <h3 class="contact-subtitle" style="text-align: center; margin-bottom: 2rem;">Ready to Connect?</h3>
+                        <p style="text-align: center; color: #4a5568; margin-bottom: 2rem; line-height: 1.6;">
+                            Click the button below to send me an email directly. Your default email client will open with a pre-filled message.
+                        </p>
+                        
+                        <div style="text-align: center; margin-bottom: 2rem;">
+                            <button onclick="openEmailClient()" 
+                                    class="btn btn-primary" 
+                                    style="font-size: 1.1rem; padding: 15px 40px; border: none; cursor: pointer;">
+                                <i class="fas fa-envelope"></i> Send Email
+                            </button>
+                            
+                            <!-- Fallback simple mailto link -->
+                            <div style="margin-top: 1rem;">
+                                <a href="mailto:your.email@example.com" 
+                                   class="btn btn-secondary" 
+                                   style="font-size: 0.9rem; padding: 10px 25px;">
+                                    <i class="fas fa-envelope-open"></i> Simple Email Link
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="email-alternatives" style="background: #f8fafc; padding: 2rem; border-radius: 15px; text-align: center;">
+                            <h4 style="color: #2d3748; margin-bottom: 1rem;">Prefer Other Ways?</h4>
+                            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                                <div class="contact-option">
+                                    <i class="fas fa-copy" style="color: #667eea; font-size: 1.2rem; margin-bottom: 0.5rem;"></i>
+                                    <p style="font-size: 0.9rem; color: #4a5568; margin: 0;">Copy Email</p>
+                                    <button onclick="copyEmail()" class="copy-email-btn" style="background: none; border: 1px solid #667eea; color: #667eea; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; margin-top: 0.5rem; cursor: pointer; transition: all 0.3s ease;">
+                                        your.email@example.com
+                                    </button>
+                                </div>
+                                <div class="contact-option">
+                                    <i class="fab fa-linkedin" style="color: #667eea; font-size: 1.2rem; margin-bottom: 0.5rem;"></i>
+                                    <p style="font-size: 0.9rem; color: #4a5568; margin: 0;">LinkedIn</p>
+                                    <a href="#" target="_blank" style="display: inline-block; background: none; border: 1px solid #667eea; color: #667eea; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; margin-top: 0.5rem; text-decoration: none; transition: all 0.3s ease;">
+                                        Connect
+                                    </a>
+                                </div>
+                                <div class="contact-option">
+                                    <i class="fab fa-github" style="color: #667eea; font-size: 1.2rem; margin-bottom: 0.5rem;"></i>
+                                    <p style="font-size: 0.9rem; color: #4a5568; margin: 0;">GitHub</p>
+                                    <a href="#" target="_blank" style="display: inline-block; background: none; border: 1px solid #667eea; color: #667eea; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; margin-top: 0.5rem; text-decoration: none; transition: all 0.3s ease;">
+                                        Follow
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="text-align: center; margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%); border-radius: 15px;">
+                            <h4 style="color: #667eea; margin-bottom: 1rem;">
+                                <i class="fas fa-clock"></i> Quick Response
+                            </h4>
+                            <p style="color: #4a5568; margin: 0; font-size: 0.9rem;">
+                                I typically respond to emails within <strong>24-48 hours</strong>. 
+                                Looking forward to hearing from you!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Your Name. All rights reserved.</p>
+                <p>Built with ❤️ using HTML, CSS, and JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
