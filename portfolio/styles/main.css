@@ -665,6 +665,34 @@ h1, h2, h3, h4, h5, h6 {
     background: white;
 }
 
+/* Email Contact Section */
+.email-contact-section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-option {
+    text-align: center;
+    min-width: 120px;
+}
+
+.copy-email-btn:hover,
+.contact-option a:hover {
+    background: #667eea !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.email-alternatives {
+    transition: all 0.3s ease;
+}
+
+.email-alternatives:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -534,6 +534,65 @@ function initDarkMode() {
 // Initialize dark mode
 document.addEventListener('DOMContentLoaded', initDarkMode);
 
+// Copy email function
+function copyEmail() {
+    const email = 'your.email@example.com'; // Replace with your actual email
+    
+    // Try to use the modern clipboard API
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(email).then(() => {
+            showEmailCopiedFeedback();
+        }).catch(() => {
+            fallbackCopyEmail(email);
+        });
+    } else {
+        // Fallback for older browsers
+        fallbackCopyEmail(email);
+    }
+}
+
+// Fallback copy method
+function fallbackCopyEmail(email) {
+    const textArea = document.createElement('textarea');
+    textArea.value = email;
+    textArea.style.position = 'fixed';
+    textArea.style.left = '-999999px';
+    textArea.style.top = '-999999px';
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    
+    try {
+        document.execCommand('copy');
+        showEmailCopiedFeedback();
+    } catch (err) {
+        console.error('Failed to copy email:', err);
+        showNotification('Failed to copy email. Please copy manually: ' + email, 'error');
+    }
+    
+    document.body.removeChild(textArea);
+}
+
+// Show email copied feedback
+function showEmailCopiedFeedback() {
+    const copyBtn = document.querySelector('.copy-email-btn');
+    const originalText = copyBtn.textContent;
+    
+    copyBtn.textContent = 'Copied!';
+    copyBtn.style.background = '#10b981';
+    copyBtn.style.color = 'white';
+    copyBtn.style.borderColor = '#10b981';
+    
+    setTimeout(() => {
+        copyBtn.textContent = originalText;
+        copyBtn.style.background = 'none';
+        copyBtn.style.color = '#667eea';
+        copyBtn.style.borderColor = '#667eea';
+    }, 2000);
+    
+    showNotification('Email address copied to clipboard!', 'success');
+}
+
 // Add CSS for dark mode
 const darkModeStyles = `
     .dark-mode {
