@@ -534,6 +534,37 @@ function initDarkMode() {
 // Initialize dark mode
 document.addEventListener('DOMContentLoaded', initDarkMode);
 
+// Open email client function
+function openEmailClient() {
+    const email = 'your.email@example.com'; // Replace with your actual email
+    const subject = 'Portfolio Contact - Let\'s Connect!';
+    const body = `Hi,
+
+I found your portfolio and would like to get in touch.
+
+Name: [Your Name]
+Company: [Your Company]
+
+Message:
+[Your message here]
+
+Best regards,`;
+
+    // Create the mailto URL
+    const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    try {
+        // Try to open the email client
+        window.location.href = mailtoUrl;
+        
+        // Show success message
+        showNotification('Opening your email client...', 'success');
+    } catch (error) {
+        console.error('Error opening email client:', error);
+        showNotification('Unable to open email client. Please copy the email address manually.', 'error');
+    }
+}
+
 // Copy email function
 function copyEmail() {
     const email = 'your.email@example.com'; // Replace with your actual email

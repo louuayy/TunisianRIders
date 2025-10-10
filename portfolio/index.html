@@ -376,11 +376,20 @@
                         </p>
                         
                         <div style="text-align: center; margin-bottom: 2rem;">
-                            <a href="mailto:your.email@example.com?subject=Portfolio Contact - Let's Connect!&body=Hi,%0D%0A%0D%0AI found your portfolio and would like to get in touch.%0D%0A%0D%0AName: [Your Name]%0D%0ACompany: [Your Company]%0D%0A%0D%0AMessage:%0D%0A[Your message here]%0D%0A%0D%0ABest regards," 
-                               class="btn btn-primary" 
-                               style="font-size: 1.1rem; padding: 15px 40px;">
+                            <button onclick="openEmailClient()" 
+                                    class="btn btn-primary" 
+                                    style="font-size: 1.1rem; padding: 15px 40px; border: none; cursor: pointer;">
                                 <i class="fas fa-envelope"></i> Send Email
-                            </a>
+                            </button>
+                            
+                            <!-- Fallback simple mailto link -->
+                            <div style="margin-top: 1rem;">
+                                <a href="mailto:your.email@example.com" 
+                                   class="btn btn-secondary" 
+                                   style="font-size: 0.9rem; padding: 10px 25px;">
+                                    <i class="fas fa-envelope-open"></i> Simple Email Link
+                                </a>
+                            </div>
                         </div>
                         
                         <div class="email-alternatives" style="background: #f8fafc; padding: 2rem; border-radius: 15px; text-align: center;">
